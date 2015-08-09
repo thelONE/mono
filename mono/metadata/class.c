@@ -7852,6 +7852,22 @@ mono_class_is_subclass_of (MonoClass *klass, MonoClass *klassc,
 	return FALSE;
 }
 
+mono_bool
+mono_class_is_generic(MonoClass *klass)
+{
+	if (klass->generic_class == NULL)
+		return FALSE;
+	return TRUE;
+}
+
+mono_bool
+mono_class_is_abstract(MonoClass *klass)
+{
+	if (klass->flags & TYPE_ATTRIBUTE_ABSTRACT)
+		return TRUE;
+	return FALSE;
+}
+
 static gboolean
 mono_type_is_generic_argument (MonoType *type)
 {

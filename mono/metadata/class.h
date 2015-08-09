@@ -109,6 +109,12 @@ mono_class_is_subclass_of (MonoClass *klass, MonoClass *klassc,
 						   mono_bool check_interfaces);
 
 MONO_API mono_bool
+mono_class_is_generic(MonoClass *klass);
+
+MONO_API mono_bool
+mono_class_is_abstract(MonoClass *klass);
+
+MONO_API mono_bool
 mono_class_is_assignable_from (MonoClass *klass, MonoClass *oklass);
 
 MONO_API void*
