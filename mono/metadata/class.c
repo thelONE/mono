@@ -542,6 +542,13 @@ mono_type_get_full_name (MonoClass *class)
 	return mono_type_get_name_full (mono_class_get_type (class), MONO_TYPE_NAME_FORMAT_REFLECTION);
 }
 
+char *
+mono_type_get_name_full_(MonoType *type)
+{
+	return mono_type_get_name_full(type, MONO_TYPE_NAME_FORMAT_REFLECTION);
+}
+
+
 /**
  * mono_type_get_name:
  * @type: a type

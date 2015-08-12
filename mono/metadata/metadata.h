@@ -341,6 +341,9 @@ MONO_API MonoMethodSignature*
 mono_type_get_signature  (MonoType *type);
 
 /* For MONO_TYPE_CLASS, VALUETYPE */
+MONO_API char*
+mono_type_get_name_full_ (MonoType *type);
+
 MONO_API MonoClass*
 mono_type_get_class      (MonoType *type);
 

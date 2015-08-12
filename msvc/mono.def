@@ -124,8 +124,10 @@ mono_class_init
 mono_class_instance_size
 mono_class_interface_offset
 mono_class_is_assignable_from
+mono_class_is_abstract
 mono_class_is_delegate
 mono_class_is_enum
+mono_class_is_generic
 mono_class_is_subclass_of
 mono_class_is_valid_enum
 mono_class_is_valuetype
@@ -878,6 +880,7 @@ mono_type_get_class
 mono_type_get_desc
 mono_type_get_modifiers
 mono_type_get_name
+mono_type_get_name_full_
 mono_type_get_object
 mono_type_get_ptr_type
 mono_type_get_signature
